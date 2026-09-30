@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora — студия йоги</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap header-in">
+      <a href="#top" class="logo">Aurora<span>.</span></a>
+      <nav class="nav">
+        <a href="#about">О студии</a>
+        <a href="#classes">Занятия</a>
+        <a href="#pricing">Цены</a>
+        <a href="#contact">Записаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- первый экран -->
+    <section class="hero wrap">
+      <p class="eyebrow">Йога · Медитация · Дыхание</p>
+      <h1>Найди <em>внутренний баланс</em> в студии Aurora</h1>
+      <p class="lead">Утренние и вечерние практики, дыхательные техники и медитации. Первое занятие бесплатно.</p>
+      <div class="actions">
+        <a href="#contact" class="btn btn-main">Записаться</a>
+        <a href="#classes" class="btn btn-ghost">Направления →</a>
+      </div>
+      <ul class="stats">
+        <li><b>7</b><span>лет практики</span></li>
+        <li><b>18</b><span>преподавателей</span></li>
+        <li><b>2400+</b><span>учеников</span></li>
+      </ul>
+    </section>
+
+    <!-- о студии -->
+    <section id="about" class="section">
+      <div class="wrap about">
+        <div>
+          <h2>О студии</h2>
+          <p>Aurora — пространство, где можно замедлиться, выдохнуть и вернуться к себе. Мы работаем с 2018 года.</p>
+          <p>У нас три зала, тихая медитативная комната и чайная зона. Здесь не важны гибкость или опыт — важно присутствие.</p>
+        </div>
+        <div class="features">
+          <div class="feature"><b>01</b><h3>Тишина и покой</h3><p>Три зала с хорошей звукоизоляцией в центре города.</p></div>
+          <div class="feature"><b>02</b><h3>Малые группы</h3><p>До 10 человек — преподаватель видит каждого.</p></div>
+          <div class="feature"><b>03</b><h3>Онлайн-практики</h3><p>Не получается прийти — присоединяйтесь по видео.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- направления -->
+    <section id="classes" class="section">
+      <div class="wrap">
+        <h2>Направления</h2>
+        <p class="lead">Выберите практику под своё настроение.</p>
+        <div class="cards">
+          <article class="card"><span>Утро</span><h3>Хатха-йога</h3><p>Классические асаны и работа с дыханием. Подходит новичкам.</p></article>
+          <article class="card"><span>Вечер</span><h3>Инь-йога</h3><p>Медленные глубокие позы с долгим удержанием.</p></article>
+          <article class="card"><span>Выходные</span><h3>Медитация</h3><p>Практика внимания и работа с тревожностью.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- тарифы -->
+    <section id="pricing" class="section">
+      <div class="wrap">
+        <h2>Тарифы</h2>
+        <p class="lead">Первый визит всегда бесплатный.</p>
+        <div class="plans">
+          <article class="plan">
+            <h3>Разовое</h3>
+            <p class="price">700 ₽<span>/занятие</span></p>
+            <ul><li>Любое направление</li><li>Коврик и полотенце</li></ul>
+            <a href="#contact" class="btn btn-ghost">Выбрать</a>
+          </article>
+          <article class="plan plan-hit">
+            <span class="badge">Популярный</span>
+            <h3>Абонемент</h3>
+            <p class="price">5 400 ₽<span>/8 занятий</span></p>
+            <ul><li>Любое направление</li><li>Заморозка на 14 дней</li></ul>
+            <a href="#contact" class="btn btn-main">Выбрать</a>
+          </article>
+          <article class="plan">
+            <h3>Безлимит</h3>
+            <p class="price">9 900 ₽<span>/месяц</span></p>
+            <ul><li>Все направления</li><li>Онлайн-практики</li></ul>
+            <a href="#contact" class="btn btn-ghost">Выбрать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- форма записи -->
+    <section id="contact" class="section">
+      <div class="wrap contact">
+        <div>
+          <h2>Записаться</h2>
+          <p>Оставьте заявку — свяжемся в течение дня.</p>
+          <p>г. Москва, ул. Тихая, 12<br>
+             <a href="tel:+79990001122">+7 999 000-11-22</a><br>
+             <a href="mailto:hello@aurora.studio">hello@aurora.studio</a></p>
+        </div>
+
+        <form class="form" action="#" method="post">
+          <label>Имя
+            <input type="text" placeholder="Как к вам обращаться" required minlength="2">
+          </label>
+          <label>Email
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label>Направление
+            <select required>
+              <option value="">Выберите…</option>
+              <option>Хатха-йога</option>
+              <option>Инь-йога</option>
+              <option>Медитация</option>
+            </select>
+          </label>
+          <label>Комментарий
+            <textarea rows="3" placeholder="Удобное время, вопросы"></textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" required>
+            <span>Согласен с обработкой данных</span>
+          </label>
+          <button type="submit" class="btn btn-main btn-full">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <p class="logo">Aurora<span>.</span></p>
+      <p>© 2026 Aurora Studio</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="up" aria-label="Наверх">↑</a>
+</body>
+</html>
